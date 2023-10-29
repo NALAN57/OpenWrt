@@ -9,9 +9,8 @@
 name: X86_64 OpenWrt
 
 on:
-  workflow_dispatch:
-  schedule:
-    - cron: 0 19 * * *
+   repository_dispatch:
+   workflow_dispatch:
 
 env:
   SOURCE_URL: https://github.com/coolsnowwolf/lede
